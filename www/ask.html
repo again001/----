@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>提问-问答页面</title>
+    <meta charset="utf-8">
+    <meta name="Keywords " content="$SiteKeywords "/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet " type="text/css " href="css/globle.css "/>
+    <link rel="stylesheet" href="css/popupInsert.css">
+    <link rel="stylesheet " type="text/css " href="css/style.css "/>
+    <script src='js/jquery-2.0.3.js'></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popupInsert.js"></script>
+    <script src='js/index.js'></script>
+    <script src="script/ask.js"></script>
+</head>
+
+<body>
+<div class="h50"></div>
+<div id="nav">
+    <nav class="nav">
+        <div class="back"><span class="glyphicon glyphicon-chevron-left"></span></div>
+        <div class="title">提问</div>
+        <div class="user home">
+            <span><span class="glyphicon glyphicon-home fs_18"></span></span>
+        </div>
+    </nav>
+</div>
+<main>
+    <div class="ask_content">
+        <form action="/user/signin" method="POST">
+            <div class="form-group">
+                <textarea name="content" class="form-control" rows="10" placeholder="请输入描述提问的问题"></textarea>
+            </div>
+            <input type="submit" class="btn btn-success form-control" value="提交提问">
+
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
